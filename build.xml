@@ -33,16 +33,6 @@
 		</jar>
 	</target>
 
-	<target name="compile">
-		<mkdir dir="${build.classes}" />
-		<javac srcdir="${srcdir}" destdir="${build.classes}" nowarn="on" debug="on" listfiles="yes">
-			<include name="com/automic/pm/**/*.java" />
-			<classpath>
-				<fileset dir="${libdir}" />
-			</classpath>
-		</javac>
-	</target>
-
 	<target name="create-dist-package" depends="build" description="Build package manager on windows environment">
 		<delete file="${basedir}/package-manager.zip" quiet="true" />
 		<zip destfile="${basedir}/package-manager.zip">
