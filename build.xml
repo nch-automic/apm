@@ -14,16 +14,6 @@
 			<zipfileset dir="${build.classes}" includes="**/*.class">
 			</zipfileset>
 
-			<manifest>
-				<attribute name="Main-Class" value="com.automic.pm.PackageManager" />
-				<attribute name="Class-Path" value="." />
-				<section name="package-manager">
-					<attribute name="Implementation-Vendor" value="Automic Software GmbH" />
-					<attribute name="Application-Version" value="${version}" />
-					<attribute name="Application-BuildDate" value="${TODAY}" />
-				</section>
-			</manifest>
-
 			<zipgroupfileset dir="lib">
 				<exclude name="*.jar" />
 			</zipgroupfileset>
