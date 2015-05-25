@@ -64,8 +64,4 @@
 		</zip>
 	</target>
 
-	<target name="clean" description="Cleans up the extra build files">
-		<delete dir="${build.classes}" />
-	</target>
-
 </project>
